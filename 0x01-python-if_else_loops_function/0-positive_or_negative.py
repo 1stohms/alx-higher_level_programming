@@ -1,12 +1,27 @@
-#!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
+#!/usr/bin/env python3
 
-if number > 0:
-    print("{:d} is positive".format(number))
+# Created by: Caylee Annett
+# Created on: May 2021
+# This program tells the user if a number is positive or negative
 
-elif number == 0:
-    print("{:d} is zero".format(number))
 
-else:
-    print("{:d} is negative".format(number))
+def main():
+    # This function tells the user if their number is positive or negative
+
+    # Input
+    print("This program checks if a number is positive or negative.")
+    print("")
+    integer = int(input("Enter an integer: "))
+
+    # Process & Output
+    if integer >= 1:
+        print("{} is a positive number.".format(integer))
+    elif integer <= -1:
+        print("{} is a negative number.".format(integer))
+    else:
+        print("0 is just a zero!")
+    print("\nDone.")
+
+
+if __name__ == "__main__":
+    main()
