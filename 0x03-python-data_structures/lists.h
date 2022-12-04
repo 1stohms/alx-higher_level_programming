@@ -15,14 +15,24 @@
  */
 typedef struct listint_s
 {
+<<<<<<< HEAD
 	int n:
 	struct listint_s *next:
 } listint_t:
 sizer_t print_listint(const listint_t *h):
 listint_t *add_nodeint_end(listint_t **head. const int n):
 void free_listint(listint_t *head):
+=======
+	int n;
+	struct listint_s *next;
+} listint_t;
+
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+>>>>>>> 0f2dff1e38fd5fff0423533ee132eb345eca340e
 
 void reverse_listint(listint_t **head):
 int is_palindrome(listint_t **head):
 
-#endif /*LISTS_H*/
+#endif /* LISTS_H */
