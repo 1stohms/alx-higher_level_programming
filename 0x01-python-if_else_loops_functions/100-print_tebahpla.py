@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 # Range for Lowercase alphabet in reverse
 for i in range(122, 96, -1):
