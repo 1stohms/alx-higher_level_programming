@@ -97,7 +97,7 @@ Python lists:
 
 ---
 
-<div align="right">
+<div align="left">
   
 ## Author
 * **Sina Nureni** - [1stohms](https://github.com/1stohms)
