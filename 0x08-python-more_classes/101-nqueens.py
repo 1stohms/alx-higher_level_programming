@@ -22,7 +22,6 @@ def init_board(n):
     [row.append(' ') for i in range(n) for row in board]
     return (board)
 
-
 def board_deepcopy(board):
     """Return a deepcopy of a chessboard."""
     if isinstance(board, list):
@@ -102,7 +101,8 @@ def recursive_solve(board, row, queens, solutions):
     Returns:
         solutions
     """
-    if queens == len(board):
+
+if queens == len(board):
         solutions.append(get_solution(board))
         return (solutions)
 
@@ -131,4 +131,4 @@ if __name__ == "__main__":
     board = init_board(int(sys.argv[1]))
     solutions = recursive_solve(board, 0, 0, [])
     for sol in solutions:
-        print(sol)
+
